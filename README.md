@@ -22,8 +22,6 @@ You can see the live demo of the website here: https://mg-osman.github.io/Fashio
   <p>This is a **demo** video of my fashion website.</p>
 </video>
 
-alt="Demo screenshot" width="600">
-
 ## Technologies 🛠️
 
 - HTML5
