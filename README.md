@@ -33,10 +33,6 @@ https://user-images.githubusercontent.com/58115228/234562832-92eac88d-f1e3-4d38-
 - JavaScript
 - Google Maps API
 
-## How to use 📖
-
-To clone and run this website, you'll need Git installed on your computer. From your command line:
-
 
 ## GitHub Stats 📊
 
