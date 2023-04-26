@@ -17,9 +17,10 @@ A small web dev project I've worked on with HTML5 to make a homepage for a fashi
 You can see the live demo of the website here: https://mg-osman.github.io/Fashionsite
 
 
-
-Video demo: https://user-images.githubusercontent.com/58115228/234562183-4f368e69-88b6-4476-a400-a3beda124110.mp4 
-
+<video src=" https://user-images.githubusercontent.com/58115228/234562183-4f368e69-88b6-4476-a400-a3beda124110.mp4 
+" width="320" height="240" controls>
+  <p>This is a **demo** video of my fashion website.</p>
+</video>
 
 alt="Demo screenshot" width="600">
 
