@@ -18,7 +18,10 @@ You can see the live demo of the website here: https://mg-osman.github.io/Fashio
 
 
 
-https://user-images.githubusercontent.com/58115228/234562183-4f368e69-88b6-4476-a400-a3beda124110.mp4 alt="Demo screenshot" width="600">
+Video demo: https://user-images.githubusercontent.com/58115228/234562183-4f368e69-88b6-4476-a400-a3beda124110.mp4 
+
+
+alt="Demo screenshot" width="600">
 
 ## Technologies 🛠️
 
