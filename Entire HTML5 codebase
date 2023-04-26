@@ -1,5 +1,79 @@
 <html>
 <head>
+<style>
+    /* Style the map container */
+    #map {
+      height: 120px;
+      width: 30%;
+    }
+  </style>
+</head>
+<body>
+  <!-- The map container -->
+  <div id="map"></div>
+
+  <!-- The form for user input -->
+  <form id="location-form">
+    <input type="text" id="location-input" placeholder="Enter a post code or GPS coordinates">
+    <button type="submit">Show on Map</button>
+  </form>
+
+  <!-- Load the Maps JavaScript API -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" async></script>
+
+  <!-- The script for the map logic -->
+  <script>
+    // Initialize variables
+    let map;
+    let marker;
+    let geocoder;
+
+    // Initialize the map
+    function initMap() {
+      // Create a new map object
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: -34.397, lng: 150.644 }, // Default center
+        zoom: 8,
+      });
+
+      // Create a new marker object
+      marker = new google.maps.Marker({
+        position: { lat: -34.397, lng: 150.644 }, // Default position
+        map: map,
+      });
+
+      // Create a new geocoder object
+      geocoder = new google.maps.Geocoder();
+    }
+
+    // Handle the form submission
+    function handleForm(event) {
+      event.preventDefault(); // Prevent the default behavior of the form
+      let location = document.getElementById("location-input").value; // Get the user input
+      geocodeLocation(location); // Geocode the location
+    }
+
+    // Geocode the location
+    function geocodeLocation(location) {
+      // Use the geocoder to convert the location into coordinates
+      geocoder.geocode({ address: location }, (results, status) => {
+        if (status === "OK") {
+          // If the geocoding is successful, get the first result
+          let result = results[0];
+          // Set the map center and marker position to the result geometry
+          map.setCenter(result.geometry.location);
+          marker.setPosition(result.geometry.location);
+        } else {
+          // If the geocoding fails, alert the user
+          alert("Geocode was not successful for the following reason: " + status);
+        }
+      });
+    }
+
+    // Add an event listener to the form
+    document.getElementById("location-form").addEventListener("submit", handleForm);
+  </script>
     <style>
         * {
             margin: 0;
