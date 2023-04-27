@@ -1,6 +1,6 @@
 # Fashionsite 🛍️
 
-A small web dev project I've worked on with HTML5 to make a homepage for a fashion website.
+A small web dev project I've worked on with HTML5, CSS3 and JavaScript  to make a homepage for a fashion website.
 
 ![License](https://img.shields.io/github/license/MG-Osman/Fashionsite)
 ![Stars](https://img.shields.io/github/stars/MG-Osman/Fashionsite)
